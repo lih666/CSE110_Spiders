@@ -1,12 +1,12 @@
 #(([abcdefghijklmnopqrstuvwxyz, ])*)
 import re
 import urllib2
-import sys  
+import sys
 
 
 def read_task_info_CSE100(x):
 
-    reload(sys)  
+    reload(sys)
     sys.setdefaultencoding('utf8')
 
 
@@ -74,6 +74,8 @@ def read_task_info_CSE100(x):
                 pa = re.findall(regex_extractContents1, single_Lines[3])[0][1:][:-3]
                 if len(set(pa)) > 10:
                     pa = re.findall(regex_extractContents4, pa)[0]
+                    while (regex_extractContents5.search(pa)):
+                        pa = re.sub(regex_extractContents5, "", pa)
                     while (re.compile('<').search(pa)):
                         pa = re.sub(re.compile('<'), "", pa)
                     while (re.compile('>').search(pa)):
