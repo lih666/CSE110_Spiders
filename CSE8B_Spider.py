@@ -1,10 +1,19 @@
+#https://sites.google.com/a/eng.ucsd.edu/cse-8b-winter-2017/assignments-labs-and-schedule
 #(([abcdefghijklmnopqrstuvwxyz, ])*)
 import re
-def read_task_info_CSE110(x):
+import urllib2
+import requests
 
+def read_task_info_CSE8B(x):
+    
+    #url = 'https://sites.google.com/a/eng.ucsd.edu/cse-8b-winter-2017/assignments-labs-and-schedule'
+    #request = urllib2.Request(url)
+    #response = urllib2.urlopen(request)
 
-    data=(open("CSE8B Schedule-Winter17.html",'r').read()).replace('\n',"")
+    r = requests.get('https://sites.google.com/a/eng.ucsd.edu/cse-8b-winter-2017/assignments-labs-and-schedule', allow_redirects=True)
 
+    data=r.text.encode('utf-8').replace('\n',"")
+    #print(r.text.encode('utf-8'))
     #Ten Weeks Task in total
     task_Regex = re.compile(r'<tbody>.*</tbody>')
     all_Task_Table = re.findall(task_Regex,data)
@@ -65,4 +74,4 @@ def read_task_info_CSE110(x):
 
 
 
-read_task_info_CSE110(1)
+read_task_info_CSE8B(1)

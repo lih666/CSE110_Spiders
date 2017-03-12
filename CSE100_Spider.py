@@ -1,9 +1,26 @@
 #(([abcdefghijklmnopqrstuvwxyz, ])*)
 import re
-def read_task_info_CSE110(x):
+import urllib2
+import sys  
 
 
-    data=(open("CSE100.html",'r', encoding='utf8').read()).replace('\n',"")
+def read_task_info_CSE100(x):
+
+    reload(sys)  
+    sys.setdefaultencoding('utf8')
+
+
+    url = 'https://sites.google.com/a/eng.ucsd.edu/cse-100-winter-2017/schedule-and-assignments'
+    request = urllib2.Request(url)
+
+    response = urllib2.urlopen(request)
+
+
+
+    data=response.read().replace('\n',"")
+
+    data = data.replace('\xa0',' ')
+    data = data.replace('\xc2','')
 
     #Ten Weeks Task in total
     task_Regex = re.compile(r'<tbody>.*</tbody>')
@@ -70,4 +87,4 @@ def read_task_info_CSE110(x):
                         print("PA:", pa)
                         print("\n")
 
-read_task_info_CSE110(1)
+read_task_info_CSE100(1)

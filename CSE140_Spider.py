@@ -3,10 +3,17 @@
 #(([abcdefghijklmnopqrstuvwxyz, ])*)
 
 import re
+import urllib2
 def read_task_info_CSE140(x):
 
+    url = 'http://cseweb.ucsd.edu/classes/wi16/cse140-a/syllabus.html'
+    request = urllib2.Request(url)
 
-    data=(open("CSE 140 Syllabus.htm",'r').read()).replace('\n',"")
+    response = urllib2.urlopen(request)
+
+
+
+    data=(response.read()).replace('\n',"")
 
     #Ten Weeks Task in total
     task_Regex = re.compile(r'<table.*</table>')
