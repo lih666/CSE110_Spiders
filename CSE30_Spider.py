@@ -72,7 +72,7 @@ def putDataToFirebase(date, taskName):
         if int(dayString) < 10:
             dayString = '0'+date[len(date)-1:len(date)]
 
-        finalDate = '01/'+dayString+'/2017 09:00'
+        finalDate = dayString+'01/'+'/2017 09:00'
     if 'February' in date:
         
         dayString = date.replace('February','')
@@ -80,7 +80,7 @@ def putDataToFirebase(date, taskName):
         if int(dayString) < 10:
             dayString = '0'+date[len(date)-1:len(date)]
 
-        finalDate = '02/'+dayString+'/2017 09:00'
+        finalDate = dayString+'02/'+'/2017 09:00'
     if 'March' in date:
         
         dayString = date.replace('March','')
@@ -88,7 +88,7 @@ def putDataToFirebase(date, taskName):
         if int(dayString) < 10:
             dayString = '0'+date[len(date)-1:len(date)]
  
-        finalDate = '03/'+dayString+'/2017 09:00'
+        finalDate = dayString+'03/'+'/2017 09:00'
 
     UUID_Gen = uuid.uuid3(uuid.NAMESPACE_DNS, taskName)
 
