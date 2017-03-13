@@ -62,7 +62,7 @@ def read_task_info_CSE20(x):
 					'courseID':'CSE20',
 					'taskName':single_task[0],
 					'taskDescription':'Task from course schedule',
-					'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 12:00',
+					'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 12:00',
 					'taskID':str(UUID_Gen),
 					'priority':5,
 					'verified':True
@@ -72,7 +72,7 @@ def read_task_info_CSE20(x):
                 'courseID':'CSE20',
 					'taskName':single_task[0],
 					'taskDescription':'Task from course schedule',
-					'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 12:00',
+					'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 12:00',
 					'taskID':str(UUID_Gen),
 					'priority':5,
 					'verified':True
