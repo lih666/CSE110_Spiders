@@ -42,7 +42,7 @@ def read_task_info_CSE15L(x):
         'courseID':'CSE15L',
         'taskName':'Midterm',
         'taskDescription':"In Class Midterm",
-        'dueDate':"02/22/2017 15:00",
+        'dueDate':"22/02/2017 15:00",
         'priority':5,
         'verified':True
     })
@@ -51,7 +51,7 @@ def read_task_info_CSE15L(x):
         'courseID':'CSE15L',
         'taskName':'Midterm',
         'taskDescription':"In Class Midterm",
-        'dueDate':"02/22/2017 15:00",
+        'dueDate':"22/02/2017 15:00",
         'priority':5,
         'verified':True
     })
@@ -64,7 +64,7 @@ def read_task_info_CSE15L(x):
         'courseID':'CSE15L',
         'taskName':'Final',
         'taskDescription':"A00 Final: Mon,  March 20th, 2017, 3:00pm-5:00pm\nB00 Final: Wed,  March 22nd, 2017, 3:00pm-5:00pm\nC00 Final: Fri,  March 24th, 2017, 3:00pm-5:00pm",
-        'dueDate':'03/24/2017 15:00',
+        'dueDate':'24/03/2017 15:00',
         'priority':5,
         'taskID':str(UUID_Gen),
         'verified':True
@@ -74,7 +74,7 @@ def read_task_info_CSE15L(x):
         'courseID':'CSE15L',
         'taskName':'Final',
         'taskDescription':"A00 Final: Mon,  March 20th, 2017, 3:00pm-5:00pm\nB00 Final: Wed,  March 22nd, 2017, 3:00pm-5:00pm\nC00 Final: Fri,  March 24th, 2017, 3:00pm-5:00pm",
-        'dueDate':'03/24/2017 15:00',
+        'dueDate':'24/03/2017 15:00',
         'priority':5,
         'taskID':str(UUID_Gen),
         'verified':True
