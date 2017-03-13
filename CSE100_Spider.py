@@ -131,7 +131,7 @@ def putDataToFirebase(date, taskName, detail):
 				'taskName':taskName,
 				'taskDescription':detail,
 				'taskID':str(UUID_Gen),
-				'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 09:00',
+				'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 09:00',
 				'priority':5,
 				'verified':True
 			})
@@ -141,7 +141,7 @@ def putDataToFirebase(date, taskName, detail):
 				'taskName':taskName,
 				'taskDescription':detail,
 				'taskID':str(UUID_Gen),
-				'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 09:00',
+				'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 09:00',
 				'priority':5,
 				'verified':True
 			})
