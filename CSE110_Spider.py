@@ -73,7 +73,7 @@ def read_task_info_CSE110(x):
 					'courseID':'CSE110',
 					'taskName':task_in_one,
 					'taskDescription':'Task from course schedule',
-					'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 09:00',
+					'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 09:00',
 					'taskID':str(UUID_Gen),
 					'priority':5,
 					'verified':True
@@ -83,7 +83,7 @@ def read_task_info_CSE110(x):
 				'courseID':'CSE110',
 					'taskName':task_in_one,
 					'taskDescription':'Task from course schedule',
-					'dueDate':dayString+"/"+monthString+"/"+str(now.year)+' 09:00',
+					'dueDate':monthString+"/"+dayString+"/"+str(now.year)+' 09:00',
 					'taskID':str(UUID_Gen),
 					'priority':5,
 					'verified':True
