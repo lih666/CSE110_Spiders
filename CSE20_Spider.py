@@ -40,17 +40,15 @@ def read_task_info_CSE20(x):
 	    print("")
 
 	    day_regex = re.compile(r'\d+')
-
-		day = re.findall(day_regex,single_Due_Day[0])[0]
-
-		month_regex_1 = re.compile(r'/\d+')
-		month_regex_1_val = re.findall(month_regex_1,single_Due_Day[0])[0]
-		month_regex_2 = re.compile(r'\d+')
-		month_regex_2_val = re.findall(month_regex_2,month_regex_1_val)[0] 
+	    day = re.findall(day_regex,single_Due_Day[0])[0]
+	    month_regex_1 = re.compile(r'/\d+')
+	    month_regex_1_val = re.findall(month_regex_1,single_Due_Day[0])[0]
+	    month_regex_2 = re.compile(r'\d+')
+	    month_regex_2_val = re.findall(month_regex_2,month_regex_1_val)[0] 
 
 	    dayString = day
-		if int(day) < 10:
-			dayString = '0'+dayString
+	    if int(day) < 10:
+	    	dayString = '0'+dayString
 
 		monthString = month_regex_2_val
 		if int(month_regex_2_val) < 10:

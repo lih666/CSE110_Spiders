@@ -152,21 +152,21 @@ def putDataToFirebase(date, taskName, detail):
         dayVal = int(date[len(date)-2:len(date)])
         if dayVal < 10:
             dayString = '0'+date[len(date)-1:len(date)]
-        finalDate = dayString+'01/'+'/2017 09:00'
+        finalDate = dayString+'/01'+'/2017 09:00'
     if 'Feb' in date:
         date.replace('Feb ','')
         dayString = date[len(date)-2:len(date)]
         dayVal = int(date[len(date)-2:len(date)])
         if dayVal < 10:
             dayString = '0'+date[len(date)-1:len(date)]
-        finalDate = dayString+'02/'+'/2017 09:00'
+        finalDate = dayString+'/02'+'/2017 09:00'
     if 'Mar' in date:
         date.replace('Mar ','')
         dayString = date[len(date)-2:len(date)]
         dayVal = int(date[len(date)-2:len(date)])
         if dayVal < 10:
             dayString = '0'+date[len(date)-1:len(date)]
-        finalDate = dayString+'03/'+'/2017 09:00'
+        finalDate = dayString+'/03/'+'2017 09:00'
 
     UUID_Gen = uuid.uuid3(uuid.NAMESPACE_DNS, detail)
 

@@ -44,6 +44,7 @@ def read_task_info_CSE15L(x):
         'taskDescription':"In Class Midterm",
         'dueDate':"22/02/2017 15:00",
         'priority':5,
+        'taskID':str(UUID_Gen),
         'verified':True
     })
     postToVerifiedTaskList = firebase.put('','/tasks/'+str(UUID_Gen),
@@ -53,6 +54,7 @@ def read_task_info_CSE15L(x):
         'taskDescription':"In Class Midterm",
         'dueDate':"22/02/2017 15:00",
         'priority':5,
+        'taskID':str(UUID_Gen),
         'verified':True
     })
 
